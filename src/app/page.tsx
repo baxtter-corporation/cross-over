@@ -1,3 +1,6 @@
+import { SpeedInsights } from "@vercel/speed-insights/next"
+import { Analytics } from "@vercel/analytics/react";
+
 import HeaderSection from "./component/headersection";
 import PartinerAndClients from "./component/partinersandclients";
 import About from "./component/about";
@@ -12,6 +15,8 @@ export default function Home() {
       <About/>
       <Service/>
       <Footer/>
+      <Analytics />
+      <SpeedInsights />
     </span>
   );
 }

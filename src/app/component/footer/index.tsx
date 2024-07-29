@@ -37,39 +37,46 @@ const Footer = () => {
                 <span className="flex items-center justify-center">
                     <Image src="image/Gradient_bar.svg" width={0} height={0} alt="email" className="md:w-[40vw] float-left absolute"/>
                 </span>
-                <span className="flex justify-between flex-row md:py-[2em] items-start bg-gradient-to-r from-[#fff] to-[#f7f7fa]">
-                    <span className="flex flex-col md:gap-[2em] justify-start max-sm:flex-col-reverse max-lg:flex-col-reverse max-lg:gap-[.5em] max-sm:gap-[.5em]">
-                        <Image src="image/Cross_black.svg" width={250} height={250} className="md:w-[200px] max-sm:-ml-[.5em] max-lg:-ml-[1em] max-sm:w-[140px] max-lg:w-[140px]" alt="Cross over logo"/>
-                        {/* <span className="flex gap-[1em]">
-                            <Image src="image/Instagram.svg" width={0} height={0} className="sm:w-[30px] w-[30px]" alt="instagram"/>
-                            <Image src="image/Facebook.svg" width={0} height={0} className="sm:w-[30px] w-[30px]" alt="facebook"/>
-                            <Image src="image/Twitter.svg" width={0} height={0} className="sm:w-[30px] w-[30px]" alt="instagram"/>
-                        </span> */}
-                    </span>
-                    <span className="flex gap-[4em] max-sm:flex-col max-sm:gap-[1em]">
-                        <span className="text-[10pt] font-[300] max-sm:mr-[1em] md:flex md:flex-col cursor-pointer z-10 max-sm:flex max-lg:flex maxsm:flex-col max-lg:flex-col gap-[.5em]">
-                            <p className="md:font-[600] md:text-[12pt] max-sm:font-[700] max-sm:text-[10pt]">Menu</p>
-                            <Link className="hover:text-[#1E90CE] cursor-pointer" href="#about">Sobre nós</Link>
-                            <Link className="hover:text-[#1E90CE] cursor-pointer" href="#service">Serviços</Link>
-                            <Link className="hover:text-[#1E90CE] cursor-pointer" href="#contact">Contactos</Link>
-                        </span>
-                        <span className="text-[10pt] font-[300] max-sm:mr-[1em] md:flex md:flex-col cursor-pointer z-10 max-sm:flex max-lg:flex maxsm:flex-col max-lg:flex-col gap-[.5em]">
-                            <p className="md:font-[600] md:text-[12pt] max-sm:font-[700] max-sm:text-[10pt]">Contacto</p>
-                            <Link className="hover:text-[#1E90CE] cursor-pointer" href="#about">+244 941 164 217</Link>
-                            <Link className="hover:text-[#1E90CE] cursor-pointer" href="#service">Luanda - Angola</Link>
-                            <Link className="hover:text-[#1E90CE] cursor-pointer" href="#product">info@crossangola.com</Link>
-                        </span>
-                    </span>
-                </span>
-                <hr />
-                <span className="flex justify-between md:py-[1em] md:text-[5pt] max-sm:py-[.2em] max-sm:flex-col max-lg:flex-col text-center max-sm:pl-[2.5em]">
-                    <span className="w-full">
-                        <span className="flex gap-[1em] text-[10pt] font-[300] max-sm:text-center max-lg:text-center max-sm:w-full w-full text-center items-center">
-                            <p className="">&copy; 2024 Cross Over - Todos direitos reservados.</p>
-                        </span>
-                    </span>
-                </span>
             </Container>
+
+            <span className="flex flex-col bg-[#1D87C5] text-white">
+                <Container>
+
+                    <span className="flex justify-between flex-row md:py-[2em] items-start">
+                        <span className="flex flex-col md:gap-[2em] justify-start max-sm:flex-col-reverse max-lg:flex-col-reverse max-lg:gap-[.5em] max-sm:gap-[.5em]">
+                            <Image src="image/logo_white.svg" width={250} height={250} className="md:w-[200px] max-sm:-ml-[.5em] max-lg:-ml-[1em] max-sm:w-[140px] max-lg:w-[140px]" alt="Cross over logo"/>
+                            {/* <span className="flex gap-[1em]">
+                                <Image src="image/Instagram.svg" width={0} height={0} className="sm:w-[30px] w-[30px]" alt="instagram"/>
+                                <Image src="image/Facebook.svg" width={0} height={0} className="sm:w-[30px] w-[30px]" alt="facebook"/>
+                                <Image src="image/Twitter.svg" width={0} height={0} className="sm:w-[30px] w-[30px]" alt="instagram"/>
+                                </span> */}
+                        </span>
+                        <span className="flex gap-[4em] max-sm:flex-col max-sm:gap-[1em]">
+                            <span className="text-[10pt] font-[300] max-sm:mr-[1em] md:flex md:flex-col cursor-pointer z-10 max-sm:flex max-lg:flex maxsm:flex-col max-lg:flex-col gap-[.5em]">
+                                <p className="md:font-[600] md:text-[12pt] max-sm:font-[700] max-sm:text-[10pt]">Menu</p>
+                                <Link className="hover:text-[#1E90CE] cursor-pointer" href="#about">Sobre nós</Link>
+                                <Link className="hover:text-[#1E90CE] cursor-pointer" href="#service">Serviços</Link>
+                                <Link className="hover:text-[#1E90CE] cursor-pointer" href="#contact">Contactos</Link>
+                            </span>
+                            <span className="text-[10pt] font-[300] max-sm:mr-[1em] md:flex md:flex-col cursor-pointer z-10 max-sm:flex max-lg:flex maxsm:flex-col max-lg:flex-col gap-[.5em]">
+                                <p className="md:font-[600] md:text-[12pt] max-sm:font-[700] max-sm:text-[10pt]">Contacto</p>
+                                <Link className="hover:text-[#1E90CE] cursor-pointer" href="#about">+244 941 164 217</Link>
+                                <Link className="hover:text-[#1E90CE] cursor-pointer" href="#service">Luanda - Angola</Link>
+                                <Link className="hover:text-[#1E90CE] cursor-pointer" href="#product">info@crossangola.com</Link>
+                            </span>
+                        </span>
+                    </span>
+                    <hr />
+                    <span className="flex justify-between md:py-[1em] md:text-[5pt] max-sm:py-[.2em] max-sm:flex-col max-lg:flex-col text-center max-sm:pl-[2.5em]">
+                        <span className="w-full">
+                            <span className="flex gap-[1em] text-[10pt] font-[300] max-sm:text-center max-lg:text-center max-sm:w-full w-full text-center items-center">
+                                <p className="">&copy; 2024 Cross Over - Todos direitos reservados.</p>
+                            </span>
+                        </span>
+                    </span>
+                </Container>
+            </span>
+
         </span>
     )
 }   

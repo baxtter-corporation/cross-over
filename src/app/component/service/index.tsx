@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const Service = () => {
     return (
-        <Container customClass={`md:py-[4em] flex flex-col md:gap-[8em] max-sm:gap-[2em] max-lg:gap-[2em] ${style.back} max-sm:p-[.5em] max-lg:p-[.5em]`} id="service">
+        <Container customClass={`md:py-[4em] md:-mb-[10em] flex flex-col md:gap-[8em] max-sm:gap-[2em] max-lg:gap-[2em] ${style.back} max-sm:p-[.5em] max-lg:p-[.5em]`} id="service">
             <span className="flex flex-col md:gap-[2em] justify-center max-sm:w-full max-lg:w-full max-sm:gap-[1em] max-lg:gap-[1em]">
                 <span className="flex flex-col items-center max-sm:pt-[1em] max-lg:pt-[1em] max-sm:py-[.5em] max-lg:py-[.5em]">
                     <h1 className="font-[800] text-[#0D0D0D] text-[25pt] max-lg:text-[13pt] max-sm:text-[13pt]">CONFIRA OS NOSSOS SERVIÇOS</h1>
@@ -61,7 +61,6 @@ const Service = () => {
                         <OtherCard title="Áudio em rede" text="Controle de acesso flexível - mais do que apenas aberto" background="2"/>
                     </span>
                 </span>
-
             </span>
         </Container>
     )
