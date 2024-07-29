@@ -1,6 +1,7 @@
     .background {
         background: url('/image/back.png') no-repeat;
-        background-size: cover;     
+        background-size: cover; 
+        background-position: center;    
     }
 
     .back {
