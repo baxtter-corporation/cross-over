@@ -1,0 +1,29 @@
+    .background {
+        background: url('/image/back.png') no-repeat;
+        background-size: cover;     
+    }
+
+    .back {
+        background: url('/image/vector.svg') no-repeat;
+        background-size: cover; 
+    }
+
+    .cardbgimage1 {
+        background: url('/image/accesscontrol.svg') no-repeat;
+        background-size: cover;
+    }
+
+    .cardbgimage2 {
+        background: url('/image/networkaudio.svg') no-repeat;
+        background-size: cover;
+    }
+
+    .cardbgimage3 {
+        background: url('/image/networkcam.svg') no-repeat;
+        background-size: cover;
+    }
+
+    .cardbgimage4 {
+        background: url('/image/networkintercomunication.svg') no-repeat;
+        background-size: cover;
+    }
