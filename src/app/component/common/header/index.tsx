@@ -12,12 +12,13 @@ const Header = () => {
 
     return (
         <span className="flex flex-col text-center bg-white max-sm:bg-white">
-            <Container>
+            <Container customClass="md:w-full">
                 <span className="flex justify-between items-center">
                     <span>
                         <Image src="image/cross_black.svg" width={202} height={68} className="md:w-[202px] md:h-[68px] max-sm:w-[150px] max-lg:w-[150px]" alt="logotipoCrossOver"/>
                     </span>
                     <span className="flex justify-between gap-[2em] text-[16px] font-[500] text-black max-sm:hidden max-lg:hidden">
+                        <Link href="#home" className="hover:text-[#1E90CE] h-6">Home</Link>
                         <Link href="#about" className="hover:text-[#1E90CE] h-6">Sobre Nós</Link>
                         <Link href="#service" className="hover:text-[#1E90CE] h-6">Serviços</Link>
                         <Link href="#product" className="hover:text-[#1E90CE] h-6">Produtos</Link>
@@ -43,7 +44,7 @@ const Header = () => {
 
                     </span>
 
-                    <span>
+                    <span className="md:hidden">
                         <span className="hidden max-sm:flex max-lg:flex flex-col gap-[.3em] max-sm:mx-[.5em] cursor-pointer">
                             <button onClick={() => setShowMenu(!showMenu)} className="max-sm:flex max-lg:flex flex-col gap-[.3em] max-sm:items-start max-sm:justify-center">
                                 <span className="flex flex-col items-center gap-[.3em]">

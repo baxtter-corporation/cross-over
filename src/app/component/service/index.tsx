@@ -26,7 +26,8 @@ const Service = () => {
                     <h1 className="font-[800] text-[25pt] max-sm:text-[13pt] max-lg:text-[13pt]">Porque escolher a CrossOver ?</h1>
                 </span>
                 <span>
-                    <p>A empresa se destaca por sua dedicação à inovação, segurança e excelência no serviço, oferecendo soluções completas e personalizadas para garantir a proteção e o sucesso dos seus clientes, tudo isso em parceria com líderes mundiais do setor..</p>
+                    <p className="md:hidden">A empresa se destaca por sua dedicação à inovação, segurança e excelência no serviço, oferecendo soluções completas e personalizadas para garantir a proteção e o sucesso dos seus clientes, tudo isso em parceria com líderes mundiais do setor..</p>
+                    <p className="max-sm:hidden max-lg:hidden">Porque somos uma empresa comprometida com a inovação inteligente e segura para os clientes. A nossa parceira com empresas lideres no mercado internacional como à Axis Comunication, empresa líder da indústria em vigilância por vídeo, que desenvolve e fornece soluções de rede inovadoras que melhoram a segurança e o desempenho empresarial. A CroosOver, oferece soluções de rede em vigilância por vídeo, controle de acesso, controlo anti-intrusão, Incêndio. Eles são aprimorados por aplicativos de análise inteligente e apoiados por treinamento de alta excelência na solução de vigilância por vídeo, controle de acesso, interfone, e sistemas de áudio</p>
                 </span>
 
                 {/* Campo destinado a um video ilustrativo da cross-over */}
