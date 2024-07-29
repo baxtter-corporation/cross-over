@@ -39,7 +39,7 @@ const Footer = () => {
                 </span>
             </Container>
 
-            <span className="flex flex-col bg-[#1D87C5] text-white">
+            <span className="flex flex-col bg-[#1D87C5] text-white max-sm:py-[1em]">
                 <Container>
 
                     <span className="flex justify-between flex-row md:py-[2em] items-start">
@@ -51,18 +51,24 @@ const Footer = () => {
                                 <Image src="image/Twitter.svg" width={0} height={0} className="sm:w-[30px] w-[30px]" alt="instagram"/>
                                 </span> */}
                         </span>
-                        <span className="flex gap-[4em] max-sm:flex-col max-sm:gap-[1em]">
+                        <span className="flex gap-[4em] max-sm:flex-col max-sm:gap-[1em] max-sm:py-[1em]">
                             <span className="text-[10pt] font-[300] max-sm:mr-[1em] md:flex md:flex-col cursor-pointer z-10 max-sm:flex max-lg:flex maxsm:flex-col max-lg:flex-col gap-[.5em]">
                                 <p className="md:font-[600] md:text-[12pt] max-sm:font-[700] max-sm:text-[10pt]">Menu</p>
-                                <Link className="hover:text-[#1E90CE] cursor-pointer" href="#about">Sobre nós</Link>
-                                <Link className="hover:text-[#1E90CE] cursor-pointer" href="#service">Serviços</Link>
-                                <Link className="hover:text-[#1E90CE] cursor-pointer" href="#contact">Contactos</Link>
+                                <Link className="hover:text-[#9fb2bd] cursor-pointer" href="#home">Home</Link>
+                                <Link className="hover:text-[#9fb2bd] cursor-pointer" href="#about">Sobre nós</Link>
+                                <Link className="hover:text-[#9fb2bd] cursor-pointer" href="#service">Serviços</Link>
+                                <Link className="hover:text-[#9fb2bd] cursor-pointer" href="#contact">Contactos</Link>
                             </span>
                             <span className="text-[10pt] font-[300] max-sm:mr-[1em] md:flex md:flex-col cursor-pointer z-10 max-sm:flex max-lg:flex maxsm:flex-col max-lg:flex-col gap-[.5em]">
                                 <p className="md:font-[600] md:text-[12pt] max-sm:font-[700] max-sm:text-[10pt]">Contacto</p>
-                                <Link className="hover:text-[#1E90CE] cursor-pointer" href="#about">+244 941 164 217</Link>
-                                <Link className="hover:text-[#1E90CE] cursor-pointer" href="#service">Luanda - Angola</Link>
-                                <Link className="hover:text-[#1E90CE] cursor-pointer" href="#product">info@crossangola.com</Link>
+                                <Link className="hover:text-[#9fb2bd] cursor-pointer flex gap-[.5em]" href="#contact">
+                                    <Image src="/image/contacto.svg" width={20} height={20} alt="contact" />
+                                    +244 941 164 217
+                                </Link>
+                                <Link className="hover:text-[#9fb2bd] cursor-pointer flex gap-[.5em]" href="#contact">
+                                    <Image src="/image/email-icon.svg" width={20} height={20} alt="email" />
+                                    info@crossangola.com
+                                </Link>
                             </span>
                         </span>
                     </span>

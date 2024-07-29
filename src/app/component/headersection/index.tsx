@@ -5,7 +5,7 @@ import Style from "../../../../style/index.module.css";
 const HeaderSection = () => {
     return (
         <div className="md:h-[100vh]">
-        <span className={`md:h-full md:w-full max-sm:h-full max-sm:w-full max-lg:h-full max-lg:w-full absolute top-0 left-0 -z-10 ${Style.background}`}></span>
+        <span className={`md:h-full md:w-full max-sm:h-full max-sm:w-full max-lg:h-full max-lg:w-full absolute top-0 left-0 -z-10 ${Style.background}`} id="home"></span>
         <Header/>
         <Container customClass={`md:h-[100vh] relative max-sm:h-[60vh] max-lg:h-[60vh] max-sm:p-[.5em]`}>
             <span className="flex flex-col md:h-[100vh] max-sm:h-[60vh] max-lg:h-[60vh]">
