@@ -11,7 +11,7 @@ const Header = () => {
     const [showMenu, setShowMenu] = useState(false);
 
     return (
-        <span className="flex flex-col text-center bg-white">
+        <span className="flex flex-col text-center bg-white max-sm:bg-white">
             <Container>
                 <span className="flex justify-between items-center">
                     <span>
@@ -45,10 +45,13 @@ const Header = () => {
 
                     <span>
                         <span className="hidden max-sm:flex max-lg:flex flex-col gap-[.3em] max-sm:mx-[.5em] cursor-pointer">
-                            <button onClick={() => setShowMenu(!showMenu)} className="max-sm:flex max-lg:flex flex-col gap-[.3em]">
-                                <span className="h-[2px] w-[30px] bg-black"></span>
-                                <span className="h-[2px] w-[30px] bg-black"></span>
-                                <span className="h-[2px] w-[30px] bg-black"></span>
+                            <button onClick={() => setShowMenu(!showMenu)} className="max-sm:flex max-lg:flex flex-col gap-[.3em] max-sm:items-start max-sm:justify-center">
+                                <span className="flex flex-col items-center gap-[.3em]">
+                                    <span className="h-[2px] w-[30px] bg-black"></span>
+                                    <span className="h-[2px] w-[20px] bg-black"></span>
+                                    <span className="h-[2px] w-[10px] bg-black"></span>
+                                </span>
+                                {/* <Image src="/image/menu.svg" width={24} height={24} alt="menu"/> */}
                             </button>
                         </span>
 

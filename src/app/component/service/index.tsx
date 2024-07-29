@@ -8,28 +8,30 @@ const Service = () => {
     return (
         <Container customClass={`md:py-[4em] flex flex-col md:gap-[8em] max-sm:gap-[2em] max-lg:gap-[2em] ${style.back} max-sm:p-[.5em] max-lg:p-[.5em]`} id="service">
             <span className="flex flex-col md:gap-[2em] justify-center max-sm:w-full max-lg:w-full max-sm:gap-[2em] max-lg:gap-[2em]">
-                <span className="flex flex-col items-center">
-                    <h1 className="font-[800] text-[#0D0D0D] text-[25pt]">Nossos Serviços</h1>
+                <span className="flex flex-col items-center max-sm:py-[2em] max-lg:py-[2em]">
+                    <h1 className="font-[800] text-[#0D0D0D] text-[25pt] max-lg:text-[16pt] max-sm:text-[16pt]">Nossos Serviços</h1>
                 </span>
-                <span className="flex justify-between flex-wrap max-sm:gap-[1em] max-lg:gap-[1em]">
+                <span className="flex justify-between flex-wrap max-sm:gap-[2em] max-lg:gap-[4em]">
                     <ServiceCard img="image/cctv-camera.svg" title="CCTV (Closed-Circuit Television)" text="Temos para si, as melhores e mais evoluídas soluções de vídeo vigilância, para que a monitorização do seu espaço seja uma realidade. Encontrarás aqui, ou analógicos. Oferecemos ainda a possibilidade de integração com outros sistemas de proteção."/>
 
                     <ServiceCard img="image/square-lock-password.svg" title="Sistemas Avançados de Detecção de Intrusão" text="Temos para si, as melhores e mais evoluídas soluções de vídeo vigilância, para que a monitorização dia à dia do seu espaço seja uma realidade. Encontrarás aqui, ou analógicos. Oferecemos ainda a possibilidade de integração com outros sistemas de proteção."/>
                     
                     <ServiceCard img="image/security-lock.svg" title="Controlo de Acesso" text="Temos para si, as melhores e mais evoluídas soluções de vídeo vigilância, para que a monitorização dia à dia do seu espaço seja uma realidade. Encontrarás aqui, ou analógicos. Oferecemos ainda a possibilidade de integração com outros sistemas de proteção."/>
                     
-                    <ServiceCard img="image/fire-security.svg" title="Detecção e Alarme de Incêncdio" text="Temos para si, as melhores e mais evoluídas soluções de vídeo vigilância, para que a monitorização dia à dia do seu espaço seja uma realidade. Encontrarás aqui, ou analógicos. Oferecemos ainda a possibilidade de integração com outros sistemas de proteção."/>
+                    <ServiceCard img="image/fire-security.svg" title="Detecção e Alarme de Incêndio" text="Temos para si, as melhores e mais evoluídas soluções de vídeo vigilância, para que a monitorização dia à dia do seu espaço seja uma realidade. Encontrarás aqui, ou analógicos. Oferecemos ainda a possibilidade de integração com outros sistemas de proteção."/>
                 </span>
             </span>
-            <span className="flex flex-col justify-center items-center md:gap-[4em] max-sm:gap-[2em] max-lg:gap-[2em]">
+            <span className="flex flex-col justify-center items-center md:gap-[4em] max-sm:gap-[2em] max-lg:gap-[2em] max-lg:text-center max-sm:text-center">
                 <span>
-                    <h1 className="font-[800] text-[25pt] max-sm:text-[18pt] max-lg:text-[18pt]">Porque escolher a CrossOver ?</h1>
+                    <h1 className="font-[800] text-[25pt] max-sm:text-[13pt] max-lg:text-[13pt]">Porque escolher a CrossOver ?</h1>
                 </span>
-                <span className="text-justify">
+                <span>
                     <p>Porque somos uma empresa comprometida com a inovação inteligente e segura para os clientes. A nossa parceira com empresas lideres no mercado internacional como à Axis Comunication, empresa líder da indústria em vigilância por vídeo, que desenvolve e fornece soluções de rede inovadoras que melhoram a segurança e o desempenho empresarial. A CroosOver, oferece soluções de rede em vigilância por vídeo, controle de acesso, controlo anti-intrusão, Incêndio. Eles são aprimorados por aplicativos de análise inteligente e apoiados por treinamento de alta excelência na solução de vigilância por vídeo, controle de acesso, interfone, e sistemas de áudio.</p>
                 </span>
+
+                {/* Campo destinado a um video ilustrativo da cross-over */}
                 
-                <span className="flex flex-col items-start">
+                {/* <span className="flex flex-col items-start">
                     <span className="flex justify-end p-[.6em] absolute">
                         <span className="flex border border-[#8080806c] rounded-[5px] items-center gap-[.5em] md:px-[.5em] md:py-[.2em] bg-[#ffffff25]">
                             <p className="font-[500] text-white">CrossOver</p>
@@ -41,12 +43,15 @@ const Service = () => {
                         <source src="" type="video/mp4" />
                     </video>
 
-                </span>
+                </span> */}
+
+                {/* Campo destinado a um video ilustrativo da cross-over */}
+
 
                 <span className="flex flex-col gap-[4em] ">
                     <span className="flex flex-col items-center gap-[3em] text-center">
-                        <p className="bg-[#2097DB] text-white md:p-[.2em] rounded-[5px] text-[10pt] max-sm:p-[.2em] max-lg:p-[.2em]">Descubra soluções inteligentes</p>
-                        <h1 className="font-[700] text-[20pt] md:w-[70%]">Projecta e expanda o seu negócio com soluções de ponta</h1>
+                        {/* <p className="bg-[#2097DB] text-white md:p-[.2em] rounded-[5px] text-[10pt] max-sm:p-[.2em] max-lg:p-[.2em]">Descubra soluções inteligentes</p> */}
+                        <h1 className="font-[700] text-[20pt] md:w-full max-sm:text-[13pt] max-lg:text-[13pt]">Projecta e expanda o seu negócio com soluções de ponta</h1>
                     </span>
                     <span className="flex gap-[2em] md:mb-[10em] sm:flex max-sm:flex-wrap md:flex md:flex-wrap">
                         <OtherCard title="Controlo de Acesso" text="Controle de acesso flexível - mais do que apenas aberto" background="1"/>
