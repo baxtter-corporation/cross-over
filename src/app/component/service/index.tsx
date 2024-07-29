@@ -7,9 +7,9 @@ import Image from "next/image";
 const Service = () => {
     return (
         <Container customClass={`md:py-[4em] flex flex-col md:gap-[8em] max-sm:gap-[2em] max-lg:gap-[2em] ${style.back} max-sm:p-[.5em] max-lg:p-[.5em]`} id="service">
-            <span className="flex flex-col md:gap-[2em] justify-center max-sm:w-full max-lg:w-full max-sm:gap-[2em] max-lg:gap-[2em]">
-                <span className="flex flex-col items-center max-sm:py-[2em] max-lg:py-[2em]">
-                    <h1 className="font-[800] text-[#0D0D0D] text-[25pt] max-lg:text-[16pt] max-sm:text-[16pt]">Nossos Serviços</h1>
+            <span className="flex flex-col md:gap-[2em] justify-center max-sm:w-full max-lg:w-full max-sm:gap-[1em] max-lg:gap-[1em]">
+                <span className="flex flex-col items-center max-sm:pt-[1em] max-lg:pt-[1em] max-sm:py-[.5em] max-lg:py-[.5em]">
+                    <h1 className="font-[800] text-[#0D0D0D] text-[25pt] max-lg:text-[13pt] max-sm:text-[13pt]">CONFIRA OS NOSSOS SERVIÇOS</h1>
                 </span>
                 <span className="flex justify-between flex-wrap max-sm:gap-[2em] max-lg:gap-[4em]">
                     <ServiceCard img="image/cctv-camera.svg" title="CCTV (Closed-Circuit Television)" text="Temos para si, as melhores e mais evoluídas soluções de vídeo vigilância, para que a monitorização do seu espaço seja uma realidade. Encontrarás aqui, ou analógicos. Oferecemos ainda a possibilidade de integração com outros sistemas de proteção."/>
@@ -26,7 +26,7 @@ const Service = () => {
                     <h1 className="font-[800] text-[25pt] max-sm:text-[13pt] max-lg:text-[13pt]">Porque escolher a CrossOver ?</h1>
                 </span>
                 <span>
-                    <p>Porque somos uma empresa comprometida com a inovação inteligente e segura para os clientes. A nossa parceira com empresas lideres no mercado internacional como à Axis Comunication, empresa líder da indústria em vigilância por vídeo, que desenvolve e fornece soluções de rede inovadoras que melhoram a segurança e o desempenho empresarial. A CroosOver, oferece soluções de rede em vigilância por vídeo, controle de acesso, controlo anti-intrusão, Incêndio. Eles são aprimorados por aplicativos de análise inteligente e apoiados por treinamento de alta excelência na solução de vigilância por vídeo, controle de acesso, interfone, e sistemas de áudio.</p>
+                    <p>A empresa se destaca por sua dedicação à inovação, segurança e excelência no serviço, oferecendo soluções completas e personalizadas para garantir a proteção e o sucesso dos seus clientes, tudo isso em parceria com líderes mundiais do setor..</p>
                 </span>
 
                 {/* Campo destinado a um video ilustrativo da cross-over */}

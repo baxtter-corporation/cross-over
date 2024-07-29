@@ -1,8 +1,14 @@
+"use client";
+
 import Image from "next/image";
 import Container from "../common/container";
 import Link from "next/link";
+import { useState } from "react";
 
 const Footer = () => {
+
+    const [send, setSent] = useState("");
+
     return (
         <Container customClass="md:py-[2em] bg-white flex flex-col gap-[1em] max-lg:p-[.5em] max-sm:mt-[2em] max-lg:mt-[2em]" id="contact">
             <span className="flex max-lg:flex-col max-sm:flex-col max-sm:gap-[.8em] md:flex md:justify-between md:py-[5em] max-lg:gap-[.8em] max-sm:mb-[1em] max-lg:mb-[1em]">
@@ -22,7 +28,7 @@ const Footer = () => {
                         <input type="text" placeholder="Digite o seu email" className="border-none md:py-[.5em] outline-none md:px-[.2em] max-lg:py-[.5em] max-lg:px-[.2em] bg-transparent max-lg:w-full"/>
                     </span>
                     <span>
-                        <button className="bg-[#1D87C5] text-white p-[.5em] rounded-[8px] hover:bg-[#1d78ac]">Enviar</button>
+                        <button className="bg-[#1D87C5] text-white p-[.5em] rounded-[8px] hover:bg-[#1d78ac]" onClick={() => setSent("Enviado")}>Enviar</button>
                     </span>
                 </span>
             </span>
@@ -50,7 +56,7 @@ const Footer = () => {
             <hr />
             <span className="flex justify-between md:py-[1em] md:text-[5pt] max-sm:py-[.2em] max-sm:flex-col max-lg:flex-col">
                 <span>
-                    <span className="flex gap-[1em] text-[10pt] font-[300]">
+                    <span className="flex gap-[1em] text-[10pt] font-[300] max-sm:text-center max-lg:text-center max-sm:w-full">
                         <p>&copy; 2024 Cross Over - Todos direitos reservados.</p>
                     </span>
                 </span>
