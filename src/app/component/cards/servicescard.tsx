@@ -10,8 +10,8 @@ type proprieties = {
 
 const ServiceCard = (props: proprieties) => {
     return (
-        <span className="flex flex-col gap-[1em] md:w-[20%] max-sm:w-full max-lg:w-full p-[.2em]">
-            <span className="md:w-full flex flex-col gap-[1em] max-sm:items-center max-sm:text-center max-lg:text-center max-lg:items-center">
+        <span className="flex flex-col gap-[1em] md:w-[20%] max-sm:w-full max-lg:w-full p-[.2em] max-tablet:w-full max-nine:w-full tablet:w-1/5 ">
+            <span className="md:w-full flex flex-col gap-[1em] max-sm:items-center max-sm:text-center max-lg:text-center max-lg:items-center max-xl:w-full">
                 <span>
                     <Image width={0} height={0} src={props.img} alt="" className="w-[2em]"/>
                 </span>

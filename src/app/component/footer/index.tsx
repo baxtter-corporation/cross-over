@@ -3,11 +3,23 @@
 import Image from "next/image";
 import Container from "../common/container";
 import Link from "next/link";
-import { useState } from "react";
+import { FormEvent, useState } from "react";
 
 const Footer = () => {
 
-    const [send, setSent] = useState("");
+    const [send, setSend] = useState("Enviar");
+
+    const handleSubmit = (e: FormEvent) => {
+        e.preventDefault();
+        try {
+            setSend("Enviando...");
+            console.log("Enviando...");
+        } catch (error) {
+            console.error(error);
+        } finally{
+            setSend("Sucesso");
+        }
+    }
 
     return (
         <span>
@@ -24,22 +36,24 @@ const Footer = () => {
                         </span>
                     </span>
 
-                    <span className="flex items-center gap-[.5em] z-10">
-                        <span className="bg-[#F1F8FE] border flex gap-[.5em] px-[.5em] rounded-[8px] max-lg:w-[100%] md:h-[2.5em]">
-                            <Image src="/image/emaillogo.svg" width={0} height={0} alt="email" className="md:w-[1em]"/>
-                            <input type="text" placeholder="Digite o seu email" className="border-none md:py-[.5em] outline-none md:px-[.2em] max-lg:py-[.5em] max-lg:px-[.2em] bg-transparent max-lg:w-full"/>
+                    <form onSubmit={handleSubmit}>
+                        <span className="flex items-center gap-[.5em] z-10">
+                            <span className="bg-[#F1F8FE] border flex gap-[.5em] px-[.5em] rounded-[8px] max-lg:w-[100%] md:h-[2.5em]">
+                                <Image src="/image/emaillogo.svg" width={0} height={0} alt="email" className="md:w-[1em]"/>
+                                <input type="text" placeholder="Digite o seu email" className="border-none md:py-[.5em] outline-none md:px-[.2em] max-lg:py-[.5em] max-lg:px-[.2em] bg-transparent max-lg:w-full"/>
+                            </span>
+                            <span>
+                                <button className="bg-[#1D87C5] text-white p-[.5em] rounded-[8px] hover:bg-[#1d78ac]" value={send}>{send}</button>
+                            </span>
                         </span>
-                        <span>
-                            <button className="bg-[#1D87C5] text-white p-[.5em] rounded-[8px] hover:bg-[#1d78ac]" onClick={() => setSent("Enviado")}>Enviar</button>
-                        </span>
-                    </span>
+                    </form>
                 </span>
                 <span className="flex items-center justify-center">
                     <Image src="/image/Gradient_bar.svg" width={0} height={0} alt="email" className="md:w-[40vw] float-left absolute"/>
                 </span>
             </Container>
 
-            <span className="flex flex-col bg-[#1D87C5] text-white max-sm:py-[1em]">
+            <span className="flex flex-col bg-[#1D87C5] text-white max-sm:py-[1em] max-xl:py-[1em]">
                 <Container>
 
                     <span className="flex justify-between flex-row md:py-[2em] items-start">
@@ -73,7 +87,7 @@ const Footer = () => {
                         </span>
                     </span>
                     <hr />
-                    <span className="flex justify-between md:py-[1em] md:text-[5pt] max-sm:py-[.2em] max-sm:flex-col max-lg:flex-col text-center max-sm:pl-[2.5em]">
+                    <span className="flex justify-between md:py-[1em] md:text-[5pt] max-sm:py-[.2em] max-sm:flex-col max-lg:flex-col text-center max-sm:pl-[2.5em] max-xl:pt-[1em]">
                         <span className="w-full">
                             <span className="flex gap-[1em] text-[10pt] font-[300] max-sm:text-center max-lg:text-center max-sm:w-full w-full text-center items-center">
                                 <p className="">&copy; 2024 Cross Over - Todos direitos reservados.</p>

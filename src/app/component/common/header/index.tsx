@@ -12,13 +12,13 @@ const Header = () => {
     const [showMenu, setShowMenu] = useState(false);
 
     return (
-        <span className="flex flex-col text-center bg-white max-sm:bg-white max-sm:py-[1em]">
-            <Container customClass="md:w-full">
+        <span className="flex flex-col text-center bg-white max-sm:bg-white max-sm:py-[1em] max-xl:py-[1em]">
+            <Container customClass="md:w-full ">
                 <span className="flex justify-between items-center">
                     <span className="left-0">
-                        <Image src="/image/cross_black.jpg" width={202} height={68} className="md:w-[202px] md:h-[68px] max-sm:w-[150px] max-lg:w-[150px]" alt="logotipoCrossOver"/>
+                        <Image src="/image/cross_black.jpg" width={202} height={68} className="md:w-[202px] md:h-[68px] max-sm:w-[150px] max-lg:w-[150px] max-xl:w-[100px]" alt="logotipoCrossOver"/>
                     </span>
-                    <span className="flex justify-between gap-[4em] text-[16px] font-[500] text-[#2b2b2b] max-sm:hidden max-lg:hidden md:-ml-[8em]">
+                    <span className="flex justify-between gap-[4em] text-[16px] font-[500] text-[#2b2b2b] max-sm:hidden max-lg:hidden md:-ml-[6%]">
                         <Link href="#home" className="hover:text-[#1E90CE] h-6">Home</Link>
                         <Link href="#service" className="hover:text-[#1E90CE] h-6">Serviços</Link>
                         <Link href="#about" className="hover:text-[#1E90CE] h-6">Sobre</Link>
@@ -46,7 +46,7 @@ const Header = () => {
 
                     </span>
 
-                    <span className="md:hidden">
+                    <span className="max-xl:block hidden">
                         <span className="hidden max-sm:flex max-lg:flex flex-col gap-[.3em] max-sm:mx-[.5em] cursor-pointer">
                             <button onClick={() => setShowMenu(!showMenu)} className="max-sm:flex max-lg:flex flex-col gap-[.3em] max-sm:items-start max-sm:justify-center">
                                 <span className="flex flex-col items-center gap-[.3em]">

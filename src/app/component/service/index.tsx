@@ -11,7 +11,7 @@ const Service = () => {
                 <span className="flex flex-col items-center max-sm:pt-[1em] max-lg:pt-[1em] max-sm:py-[.5em] max-lg:py-[.5em]">
                     <h1 className="font-[800] text-[#0D0D0D] text-[25pt] max-lg:text-[13pt] max-sm:text-[13pt]">CONFIRA OS NOSSOS SERVIÇOS</h1>
                 </span>
-                <span className="flex justify-between flex-wrap max-sm:gap-[2em] max-lg:gap-[4em]">
+                <span className="flex justify-between flex-wrap max-sm:gap-[2em] max-lg:gap-[4em] max-xl:w-full max-xl:items-center max-xl:justify-between ">
                     <ServiceCard img="image/cctv-camera.svg" title="CCTV (Closed-Circuit Television)" text="Temos para si, as melhores e mais evoluídas soluções de vídeo vigilância, para que a monitorização do seu espaço seja uma realidade. Encontrarás aqui, ou analógicos. Oferecemos ainda a possibilidade de integração com outros sistemas de proteção."/>
 
                     <ServiceCard img="image/square-lock-password.svg" title="Sistemas Avançados de Detecção de Intrusão" text="Temos para si, as melhores e mais evoluídas soluções de vídeo vigilância, para que a monitorização dia à dia do seu espaço seja uma realidade. Encontrarás aqui, ou analógicos. Oferecemos ainda a possibilidade de integração com outros sistemas de proteção."/>
@@ -49,12 +49,12 @@ const Service = () => {
                 {/* Campo destinado a um video ilustrativo da cross-over */}
 
 
-                <span className="flex flex-col gap-[4em] ">
+                <span className="flex flex-col gap-[4em] max-xl:w-full">
                     <span className="flex flex-col items-center gap-[3em] text-center">
                         {/* <p className="bg-[#2097DB] text-white md:p-[.2em] rounded-[5px] text-[10pt] max-sm:p-[.2em] max-lg:p-[.2em]">Descubra soluções inteligentes</p> */}
                         <h1 className="font-[700] text-[20pt] md:w-full max-sm:text-[13pt] max-lg:text-[13pt]">Projecta e expanda o seu negócio com soluções de ponta</h1>
                     </span>
-                    <span className="flex gap-[2em] md:mb-[10em] sm:flex max-sm:flex-wrap md:flex md:flex-wrap">
+                    <span className="flex gap-[2em] md:mb-[5em] sm:flex max-sm:flex-wrap md:flex md:flex-wrap max-xl:justify-between w-full max-xl:w-full">
                         <OtherCard title="Controlo de Acesso" text="Controle de acesso flexível - mais do que apenas aberto" background="1"/>
                         <OtherCard title="Câmera em Rede" text="O melhor video em rede, inovação, qualidade e oportunidade" background="3"/>
                         <OtherCard title="Intercomunicador em Rede" text="Intercomunicações, soluções de comunicação inteligente." background="4"/>
