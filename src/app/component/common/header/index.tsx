@@ -32,13 +32,13 @@ const Header = () => {
                         </span>
 
                         {showFlag ? (
-                            <span className="absolute bg-white md:mt-[3em] cursor-pointer md:p-[.5em] z-10 shadow rounded-[.3em] flex flex-col gap-[.1em]">
-                                <span className="flex gap-3" onClick={() => setShowFlag(!showFlag)}>
-                                    <Image src="image/flagPortugal.svg" width={22} height={22} alt="portugal flag" className="md:w-[22px] md:h-[22px]"/>
+                            <span className="absolute bg-white md:mt-[3em] cursor-pointer md:p-[.5em] z-10 shadow rounded-[.3em] flex flex-col gap-[.3em]">
+                                <span className="flex gap-3 items-center p-[.5em] hover:bg-[#ccc] transition-all rounded-sm" onClick={() => setShowFlag(!showFlag)}>
+                                    <Image src="/image/flagPortugal.jpg" width={22} height={22} alt="portugal flag" className="md:w-[22px] md:h-[18px]"/>
                                     <p onClick={() => setShowFlag(!showFlag)}>Português</p>
                                 </span>
-                                <span className="flex gap-3 " onClick={() => setShowFlag(!showFlag)}>
-                                    <Image src="image/flagUK.svg" alt="uk flag" width={22} height={22} className="md:w-[22px] md:h-[22px]"/>
+                                <span className="flex gap-3 items-center p-[.5em] hover:bg-[#ccc] transition-all rounded-sm max-lg:text-[#ccc] max-sm:text-[#ccc]" onClick={() => setShowFlag(!showFlag)}>
+                                    <Image src="/image/flagUK.jpg" alt="uk flag" width={22} height={22} className="md:w-[22px] md:h-[18px]"/>
                                     English
                                 </span>
                             </span>
@@ -59,14 +59,39 @@ const Header = () => {
                         </span>
 
                         {showMenu ? (
-                            <span>
-                                <span className="absolute left-0 justify-between gap-[2em] text-[16px] font-[500] text-black hidden max-sm:flex max-lg:flex flex-col bg-white max-sm:w-full max-sm:mt-[1em] p-[2em] z-10">
+                            <span className="flex flex-col">
+                                <span className="absolute left-0 justify-between gap-[2em] text-[16px] font-[500] text-black hidden max-sm:flex max-lg:flex flex-col bg-white max-sm:w-full max-sm:mt-[1em] max-lg:w-full max-lg:mt-[1em] p-[2em] z-10">
                                     <Link href="#about" className="hover:text-[#1E90CE]">Sobre Nós</Link>
                                     <Link href="#service" className="hover:text-[#1E90CE]">Serviços</Link>
                                     <Link href="#product" className="hover:text-[#1E90CE]">Produtos</Link>
                                     <Link href="#contact" className="hover:text-[#1E90CE] cursor-pointer">Contactos</Link>
+                                        <hr/>
+
+                                    <span className="flex flex-col gap-[.3em] items-center max-sm:w-full max-lg:w-full ">
+                                        <span className="p-[.2em] rounded-[.3em] cursor-pointer md:text-[10pt] max-lg:w-full max-sm:w-full max-lg:text-center max-lg:items-center max-lg:flex max-sm:flex max-lg:justify-center">
+                                            <button onClick={() => setShowFlag(!showFlag)} className="bg-transparent border-none flex items-center justify-center">Idioma
+                                                <span><Image src="/image/down.png" width={16} height={16} alt="downlogo"/></span>
+                                            </button>
+                                        </span>
+
+                                        {showFlag ? (
+                                            <span className="bg-white md:mt-[3em] max-lg:w-full max-sm:w-full cursor-pointer md:p-[.5em] z-10 max-lg:flex max-lg:flex-col max-lg:justify-center max-lg:items-center max-sm:flex max-sm:flex-col max-sm:justify-center max-sm:items-center flex flex-col gap-[.3em]">
+                                                <span className="flex gap-3 items-center p-[.5em] hover:bg-[#ccc] max-sm:w-full max-lg:w-full transition-all rounded-sm max-lg:flex max-lg:justify-center max-lg:items-center max-sm:flex max-sm:justify-center max-sm:items-center" onClick={() => setShowFlag(!showFlag)}>
+                                                    <Image src="/image/flagPortugal.jpg" width={22} height={22} alt="portugal flag" className="md:w-[22px] md:h-[18px]"/>
+                                                    <p onClick={() => setShowFlag(!showFlag)}>Português</p>
+                                                </span>
+                                                <span className="flex gap-3 items-center p-[.5em] hover:bg-[#ccc] transition-all rounded-sm max-lg:text-[#ccc] max-sm:text-[#ccc] max-sm:w-full max-lg:w-full max-lg:flex max-lg:justify-center max-lg:items-center max-sm:flex max-sm:justify-center max-sm:items-center" onClick={() => setShowFlag(!showFlag)}>
+                                                    <Image src="/image/flagUK.jpg" alt="uk flag" width={22} height={22} className="md:w-[22px] md:h-[18px]"/>
+                                                    English
+                                                </span>
+                                            </span>
+                                        ) : "" }
+
+                                    </span>
+
                                 </span>
                             </span>
+                            
                         ) : ""}
 
                     </span>

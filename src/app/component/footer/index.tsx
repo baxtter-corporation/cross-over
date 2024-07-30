@@ -25,8 +25,8 @@ const Footer = () => {
                     </span>
 
                     <span className="flex items-center gap-[.5em] z-10">
-                        <span className="bg-[#F1F8FE] border flex gap-[.5em] px-[.5em] rounded-[8px] max-lg:w-[100%]">
-                            <Image src="image/emaillogo.svg" width={0} height={0} alt="email" className="md:w-[1em]"/>
+                        <span className="bg-[#F1F8FE] border flex gap-[.5em] px-[.5em] rounded-[8px] max-lg:w-[100%] md:h-[2.5em]">
+                            <Image src="/image/emaillogo.svg" width={0} height={0} alt="email" className="md:w-[1em]"/>
                             <input type="text" placeholder="Digite o seu email" className="border-none md:py-[.5em] outline-none md:px-[.2em] max-lg:py-[.5em] max-lg:px-[.2em] bg-transparent max-lg:w-full"/>
                         </span>
                         <span>
@@ -35,7 +35,7 @@ const Footer = () => {
                     </span>
                 </span>
                 <span className="flex items-center justify-center">
-                    <Image src="image/Gradient_bar.svg" width={0} height={0} alt="email" className="md:w-[40vw] float-left absolute"/>
+                    <Image src="/image/Gradient_bar.svg" width={0} height={0} alt="email" className="md:w-[40vw] float-left absolute"/>
                 </span>
             </Container>
 
@@ -44,7 +44,7 @@ const Footer = () => {
 
                     <span className="flex justify-between flex-row md:py-[2em] items-start">
                         <span className="flex flex-col md:gap-[2em] justify-start max-sm:flex-col-reverse max-lg:flex-col-reverse max-lg:gap-[.5em] max-sm:gap-[.5em]">
-                            <Image src="image/logo_white.svg" width={250} height={250} className="md:w-[200px] max-sm:-ml-[.5em] max-lg:-ml-[1em] max-sm:w-[140px] max-lg:w-[140px]" alt="Cross over logo"/>
+                            <Image src="/image/logo_white.png" width={250} height={250} className="md:w-[200px] max-sm:-ml-[.5em] max-lg:-ml-[1em] max-sm:w-[140px] max-lg:w-[140px]" alt="Cross over logo"/>
                             {/* <span className="flex gap-[1em]">
                                 <Image src="image/Instagram.svg" width={0} height={0} className="sm:w-[30px] w-[30px]" alt="instagram"/>
                                 <Image src="image/Facebook.svg" width={0} height={0} className="sm:w-[30px] w-[30px]" alt="facebook"/>
