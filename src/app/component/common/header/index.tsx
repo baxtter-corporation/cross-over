@@ -16,7 +16,7 @@ const Header = () => {
             <Container customClass="md:w-full">
                 <span className="flex justify-between items-center">
                     <span className="left-0">
-                        <Image src="image/cross_black.svg" width={202} height={68} className="md:w-[202px] md:h-[68px] max-sm:w-[150px] max-lg:w-[150px]" alt="logotipoCrossOver"/>
+                        <Image src="/image/cross_black.jpg" width={202} height={68} className="md:w-[202px] md:h-[68px] max-sm:w-[150px] max-lg:w-[150px]" alt="logotipoCrossOver"/>
                     </span>
                     <span className="flex justify-between gap-[4em] text-[16px] font-[500] text-[#2b2b2b] max-sm:hidden max-lg:hidden md:-ml-[8em]">
                         <Link href="#home" className="hover:text-[#1E90CE] h-6">Home</Link>
