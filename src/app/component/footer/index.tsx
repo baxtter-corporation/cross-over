@@ -87,10 +87,10 @@ const Footer = () => {
                         </span>
                     </span>
                     <hr />
-                    <span className="flex justify-between md:py-[1em] md:text-[5pt] max-sm:py-[.2em] max-sm:flex-col max-lg:flex-col text-center max-sm:pl-[2.5em] max-xl:pt-[1em]">
-                        <span className="w-full">
+                    <span className="flex justify-between md:py-[1em] md:text-[5pt] max-sm:py-[.2em] max-sm:flex-col max-lg:flex-col text-center max-sm:items-center max-lg:items-center max-sm:justify-center max-lg:justify-center">
+                        <span className="w-full max-sm:text-center max-lg:text-center flex max-sm:flex-col max-lg:flex-col max-sm:flex max-lg:flex max-sm:items-center max-lg:items-center max-sm:justify-center max-lg:justify-center">
                             <span className="flex gap-[1em] text-[10pt] font-[300] max-sm:text-center max-lg:text-center max-sm:w-full w-full text-center items-center">
-                                <p className="">&copy; 2024 Cross Over - Todos direitos reservados.</p>
+                                <p className="max-sm:text-center">&copy; 2024 Cross Over - Todos direitos reservados.</p>
                             </span>
                         </span>
                     </span>
