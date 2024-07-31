@@ -34,11 +34,11 @@ const Header = () => {
                         {showFlag ? (
                             <span className="absolute bg-white md:mt-[3em] cursor-pointer md:p-[.5em] z-10 shadow rounded-[.3em] flex flex-col gap-[.3em]">
                                 <span className="flex gap-3 items-center p-[.5em] hover:bg-[#ccc] transition-all rounded-sm" onClick={() => setShowFlag(!showFlag)}>
-                                    <Image src="/image/flagPortugal.jpg" width={22} height={22} alt="portugal" className="md:w-[22px] md:h-[18px]"/>
+                                    <Image src="/image/flagPortugal.jpg" width={22} height={22} alt="" className="md:w-[22px] md:h-[18px]"/>
                                     <p onClick={() => setShowFlag(!showFlag)}>Português</p>
                                 </span>
                                 <span className="flex gap-3 items-center p-[.5em] hover:bg-[#ccc] transition-all rounded-sm max-lg:text-[#ccc] max-sm:text-[#ccc]" onClick={() => setShowFlag(!showFlag)}>
-                                    <Image src="/image/flagUK.jpg" alt="uk" width={22} height={22} className="md:w-[22px] md:h-[18px]"/>
+                                    <Image src="/image/flagUK.jpg" alt="" width={22} height={22} className="md:w-[22px] md:h-[18px]"/>
                                     English
                                 </span>
                             </span>
