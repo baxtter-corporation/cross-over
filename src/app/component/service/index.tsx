@@ -9,7 +9,7 @@ const Service = () => {
         <Container customClass={`md:py-[4em] md:-mb-[10em] flex flex-col md:gap-[8em] max-sm:gap-[2em] max-lg:gap-[2em] ${style.back} max-sm:p-[.5em] max-lg:p-[.5em]`} id="service">
             <span className="flex flex-col md:gap-[2em] justify-center max-sm:w-full max-lg:w-full max-sm:gap-[1em] max-lg:gap-[1em]">
                 <span className="flex flex-col items-center max-sm:pt-[1em] max-lg:pt-[1em] max-sm:py-[.5em] max-lg:py-[.5em]">
-                    <h1 className="font-[800] text-[#0D0D0D] text-[25pt] max-lg:text-[13pt] max-sm:text-[13pt]">CONFIRA OS NOSSOS SERVIÇOS</h1>
+                    <h1 className="font-[800] text-[#0D0D0D] text-[25pt] max-lg:text-[13pt] max-sm:text-[13pt] max-xl:w-full max-xl:text-center">CONFIRA OS NOSSOS SERVIÇOS</h1>
                 </span>
                 <span className="flex justify-between flex-wrap max-sm:gap-[2em] max-lg:gap-[4em] max-xl:w-full max-xl:items-center max-xl:justify-between max-xl:flex-col ">
                     <ServiceCard img="image/cctv-camera.svg" title="CCTV (Closed-Circuit Television)" text="Temos para si, as melhores e mais evoluídas soluções de vídeo vigilância, para que a monitorização do seu espaço seja uma realidade. Encontrarás aqui, ou analógicos. Oferecemos ainda a possibilidade de integração com outros sistemas de proteção."/>
